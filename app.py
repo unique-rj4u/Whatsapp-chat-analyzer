@@ -26,7 +26,7 @@ with st.sidebar:
     st.image("whatsapp.png", width=110)
 
 # Title of the siderbar
-st.sidebar.title("WhatsApp Chat Analyzer")
+st.sidebar.title("WhatsApp Chat Anal;'yzer")
 
 # Upload file section in sidebar
 uploaded_file = st.sidebar.file_uploader("Choose a file")
