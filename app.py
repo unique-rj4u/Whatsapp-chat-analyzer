@@ -28,6 +28,10 @@ with st.sidebar:
 # Title of the siderbar
 st.sidebar.title("WhatsApp Chat Analyzer")
 
+# Main heading
+st. markdown("<h1 style='text-align: center; color: grey;'>Whatsapp Chat Analysis</h1>", unsafe_allow_html=True)
+
+
 # Upload file section in sidebar
 uploaded_file = st.sidebar.file_uploader("Choose a file")
 if uploaded_file is not None:
