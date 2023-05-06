@@ -623,6 +623,7 @@ if uploaded_file is not None:
 
             # Main heading
             st. markdown("<h1 style='text-align: center; color: green;'>Basic Analysis</h1>", unsafe_allow_html=True)
+
             
 
             num_messages, words, num_media_messages, num_links = helper.fetch_stats(selected_user, df)
