@@ -1,7 +1,12 @@
+re
+pandas
 streamlit
-matplotlib
-seaborn
 urlextract
 wordcloud
-pandas
+matplotlib
 emoji
+collectioins
+seaborn
+nltk
+PIL
+numpy
