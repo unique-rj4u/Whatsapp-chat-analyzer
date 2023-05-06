@@ -240,7 +240,7 @@ if uploaded_file is not None:
         df["ne"] = [sentiments.polarity_scores(i)["neg"] for i in df["message"]] # Negative
         df["nu"] = [sentiments.polarity_scores(i)["neu"] for i in df["message"]] # Neutral
         
-        # To indentify true sentiment per row in message column
+        # To identify true sentiment per row in message column
         def sentiment(d):
             if d["po"] >= d["ne"] and d["po"] >= d["nu"]:
                 return 1
