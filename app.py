@@ -15,7 +15,7 @@ plt.style.use('dark_background')
 
 hide_streamlit_style = """
             <style>
-            #MainMenu {visibility: hidden;}
+            
             footer {visibility: hidden;}
             footer:after {
                 content:'Made with ❤ by Dhiraj Sahani'; 
