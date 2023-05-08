@@ -579,6 +579,9 @@ if uploaded_file is not None:
                     # Disply error image
                     st.image('error.webp')
 
+
+#---------------------------------------------------------------------<< Both >>------------------------------------------------------------------------#
+
     if user_menu == 'Both':
 
          # Importing SentimentIntensityAnalyzer class from "nltk.sentiment.vader"
