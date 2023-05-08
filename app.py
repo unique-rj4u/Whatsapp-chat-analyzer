@@ -279,7 +279,7 @@ if uploaded_file is not None:
             # Monthly activity map
             col1, col2, col3 = st.columns(3)
             with col1:
-                st.markdown("<h3 style='text-align: center; color: black;'>Monthly Activity map(Positive)</h3>",unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center; color: White;'>Monthly Activity map(Positive)</h3>",unsafe_allow_html=True)
                 
                 busy_month = helper.month_activity_map_2(selected_user, df,1)
                 
@@ -288,7 +288,7 @@ if uploaded_file is not None:
                 plt.xticks(rotation='vertical')
                 st.pyplot(fig)
             with col2:
-                st.markdown("<h3 style='text-align: center; color: black;'>Monthly Activity map(Neutral)</h3>",unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center; color: White;'>Monthly Activity map(Neutral)</h3>",unsafe_allow_html=True)
                 
                 busy_month = helper.month_activity_map_2(selected_user, df, 0)
                 
@@ -297,7 +297,7 @@ if uploaded_file is not None:
                 plt.xticks(rotation='vertical')
                 st.pyplot(fig)
             with col3:
-                st.markdown("<h3 style='text-align: center; color: black;'>Monthly Activity map(Negative)</h3>",unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center; color: White;'>Monthly Activity map(Negative)</h3>",unsafe_allow_html=True)
                 
                 busy_month = helper.month_activity_map_2(selected_user, df, -1)
                 
@@ -309,7 +309,7 @@ if uploaded_file is not None:
             # Daily activity map
             col1, col2, col3 = st.columns(3)
             with col1:
-                st.markdown("<h3 style='text-align: center; color: black;'>Daily Activity map(Positive)</h3>",unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center; color: White;'>Daily Activity map(Positive)</h3>",unsafe_allow_html=True)
                 
                 busy_day = helper.week_activity_map_2(selected_user, df,1)
                 
@@ -318,7 +318,7 @@ if uploaded_file is not None:
                 plt.xticks(rotation='vertical')
                 st.pyplot(fig)
             with col2:
-                st.markdown("<h3 style='text-align: center; color: black;'>Daily Activity map(Neutral)</h3>",unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center; color: White;'>Daily Activity map(Neutral)</h3>",unsafe_allow_html=True)
                 
                 busy_day = helper.week_activity_map_2(selected_user, df, 0)
                 
@@ -327,7 +327,7 @@ if uploaded_file is not None:
                 plt.xticks(rotation='vertical')
                 st.pyplot(fig)
             with col3:
-                st.markdown("<h3 style='text-align: center; color: black;'>Daily Activity map(Negative)</h3>",unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center; color: White;'>Daily Activity map(Negative)</h3>",unsafe_allow_html=True)
                 
                 busy_day = helper.week_activity_map_2(selected_user, df, -1)
                 
@@ -340,7 +340,7 @@ if uploaded_file is not None:
             col1, col2, col3 = st.columns(3)
             with col1:
                 try:
-                    st.markdown("<h3 style='text-align: center; color: black;'>Weekly Activity Map(Positive)</h3>",unsafe_allow_html=True)
+                    st.markdown("<h3 style='text-align: center; color: White;'>Weekly Activity Map(Positive)</h3>",unsafe_allow_html=True)
                     
                     user_heatmap = helper.activity_heatmap_2(selected_user, df, 1)
                     
@@ -351,7 +351,7 @@ if uploaded_file is not None:
                     st.image('error.webp')
             with col2:
                 try:
-                    st.markdown("<h3 style='text-align: center; color: black;'>Weekly Activity Map(Neutral)</h3>",unsafe_allow_html=True)
+                    st.markdown("<h3 style='text-align: center; color: White;'>Weekly Activity Map(Neutral)</h3>",unsafe_allow_html=True)
                     
                     user_heatmap = helper.activity_heatmap_2(selected_user, df, 0)
                     
@@ -362,7 +362,7 @@ if uploaded_file is not None:
                     st.image('error.webp')
             with col3:
                 try:
-                    st.markdown("<h3 style='text-align: center; color: black;'>Weekly Activity Map(Negative)</h3>",unsafe_allow_html=True)
+                    st.markdown("<h3 style='text-align: center; color: White;'>Weekly Activity Map(Negative)</h3>",unsafe_allow_html=True)
                     
                     user_heatmap = helper.activity_heatmap_2(selected_user, df, -1)
                     
@@ -375,7 +375,7 @@ if uploaded_file is not None:
             # Daily timeline
             col1, col2, col3 = st.columns(3)
             with col1:
-                st.markdown("<h3 style='text-align: center; color: black;'>Daily Timeline(Positive)</h3>",unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center; color: White;'>Daily Timeline(Positive)</h3>",unsafe_allow_html=True)
                 
                 daily_timeline = helper.daily_timeline_2(selected_user, df, 1)
                 
@@ -384,7 +384,7 @@ if uploaded_file is not None:
                 plt.xticks(rotation='vertical')
                 st.pyplot(fig)
             with col2:
-                st.markdown("<h3 style='text-align: center; color: black;'>Daily Timeline(Neutral)</h3>",unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center; color: White;'>Daily Timeline(Neutral)</h3>",unsafe_allow_html=True)
                 
                 daily_timeline = helper.daily_timeline_2(selected_user, df, 0)
                 
@@ -393,7 +393,7 @@ if uploaded_file is not None:
                 plt.xticks(rotation='vertical')
                 st.pyplot(fig)
             with col3:
-                st.markdown("<h3 style='text-align: center; color: black;'>Daily Timeline(Negative)</h3>",unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center; color: White;'>Daily Timeline(Negative)</h3>",unsafe_allow_html=True)
                 
                 daily_timeline = helper.daily_timeline_2(selected_user, df, -1)
                 
@@ -405,7 +405,7 @@ if uploaded_file is not None:
             # Monthly timeline
             col1, col2, col3 = st.columns(3)
             with col1:
-                st.markdown("<h3 style='text-align: center; color: black;'>Monthly Timeline(Positive)</h3>",unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center; color: White;'>Monthly Timeline(Positive)</h3>",unsafe_allow_html=True)
                 
                 timeline = helper.monthly_timeline_2(selected_user, df,1)
                 
@@ -414,7 +414,7 @@ if uploaded_file is not None:
                 plt.xticks(rotation='vertical')
                 st.pyplot(fig)
             with col2:
-                st.markdown("<h3 style='text-align: center; color: black;'>Monthly Timeline(Neutral)</h3>",unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center; color: White;'>Monthly Timeline(Neutral)</h3>",unsafe_allow_html=True)
                 
                 timeline = helper.monthly_timeline_2(selected_user, df,0)
                 
@@ -423,7 +423,7 @@ if uploaded_file is not None:
                 plt.xticks(rotation='vertical')
                 st.pyplot(fig)
             with col3:
-                st.markdown("<h3 style='text-align: center; color: black;'>Monthly Timeline(Negative)</h3>",unsafe_allow_html=True)
+                st.markdown("<h3 style='text-align: center; color: White;'>Monthly Timeline(Negative)</h3>",unsafe_allow_html=True)
                 
                 timeline = helper.monthly_timeline_2(selected_user, df,-1)
                 
@@ -436,19 +436,19 @@ if uploaded_file is not None:
             if selected_user == 'Overall':
                 col1,col2,col3 = st.columns(3)
                 with col1:
-                    st.markdown("<h3 style='text-align: center; color: black;'>Most Positive Contribution</h3>",unsafe_allow_html=True)
+                    st.markdown("<h3 style='text-align: center; color: White;'>Most Positive Contribution</h3>",unsafe_allow_html=True)
                     x = helper.percentage(df, 1)
                     
                     # Displaying
                     st.dataframe(x)
                 with col2:
-                    st.markdown("<h3 style='text-align: center; color: black;'>Most Neutral Contribution</h3>",unsafe_allow_html=True)
+                    st.markdown("<h3 style='text-align: center; color: White;'>Most Neutral Contribution</h3>",unsafe_allow_html=True)
                     y = helper.percentage(df, 0)
                     
                     # Displaying
                     st.dataframe(y)
                 with col3:
-                    st.markdown("<h3 style='text-align: center; color: black;'>Most Negative Contribution</h3>",unsafe_allow_html=True)
+                    st.markdown("<h3 style='text-align: center; color: White;'>Most Negative Contribution</h3>",unsafe_allow_html=True)
                     z = helper.percentage(df, -1)
                     
                     # Displaying
@@ -466,7 +466,7 @@ if uploaded_file is not None:
                 col1,col2,col3 = st.columns(3)
                 with col1:
                     # heading
-                    st.markdown("<h3 style='text-align: center; color: black;'>Most Positive Users</h3>",unsafe_allow_html=True)
+                    st.markdown("<h3 style='text-align: center; color: White;'>Most Positive Users</h3>",unsafe_allow_html=True)
                     
                     # Displaying
                     fig, ax = plt.subplots()
@@ -475,7 +475,7 @@ if uploaded_file is not None:
                     st.pyplot(fig)
                 with col2:
                     # heading
-                    st.markdown("<h3 style='text-align: center; color: black;'>Most Neutral Users</h3>",unsafe_allow_html=True)
+                    st.markdown("<h3 style='text-align: center; color: White;'>Most Neutral Users</h3>",unsafe_allow_html=True)
                     
                     # Displaying
                     fig, ax = plt.subplots()
@@ -484,7 +484,7 @@ if uploaded_file is not None:
                     st.pyplot(fig)
                 with col3:
                     # heading
-                    st.markdown("<h3 style='text-align: center; color: black;'>Most Negative Users</h3>",unsafe_allow_html=True)
+                    st.markdown("<h3 style='text-align: center; color: White;'>Most Negative Users</h3>",unsafe_allow_html=True)
                     
                     # Displaying
                     fig, ax = plt.subplots()
@@ -497,7 +497,7 @@ if uploaded_file is not None:
             with col1:
                 try:
                     # heading
-                    st.markdown("<h3 style='text-align: center; color: black;'>Positive WordCloud</h3>",unsafe_allow_html=True)
+                    st.markdown("<h3 style='text-align: center; color: White;'>Positive WordCloud</h3>",unsafe_allow_html=True)
                     
                     # Creating wordcloud of positive words
                     df_wc = helper.create_wordcloud_2(selected_user, df,1)
@@ -510,7 +510,7 @@ if uploaded_file is not None:
             with col2:
                 try:
                     # heading
-                    st.markdown("<h3 style='text-align: center; color: black;'>Neutral WordCloud</h3>",unsafe_allow_html=True)
+                    st.markdown("<h3 style='text-align: center; color: White;'>Neutral WordCloud</h3>",unsafe_allow_html=True)
                     
                     # Creating wordcloud of neutral words
                     df_wc = helper.create_wordcloud_2(selected_user, df,0)
@@ -523,7 +523,7 @@ if uploaded_file is not None:
             with col3:
                 try:
                     # heading
-                    st.markdown("<h3 style='text-align: center; color: black;'>Negative WordCloud</h3>",unsafe_allow_html=True)
+                    st.markdown("<h3 style='text-align: center; color: White;'>Negative WordCloud</h3>",unsafe_allow_html=True)
                     
                     # Creating wordcloud of negative words
                     df_wc = helper.create_wordcloud_2(selected_user, df,-1)
@@ -542,7 +542,7 @@ if uploaded_file is not None:
                     most_common_df = helper.most_common_words_2(selected_user, df,1)
                     
                     # heading
-                    st.markdown("<h3 style='text-align: center; color: black;'>Positive Words</h3>",unsafe_allow_html=True)
+                    st.markdown("<h3 style='text-align: center; color: White;'>Positive Words</h3>",unsafe_allow_html=True)
                     fig, ax = plt.subplots()
                     ax.barh(most_common_df[0], most_common_df[1],color='green')
                     plt.xticks(rotation='vertical')
@@ -556,7 +556,7 @@ if uploaded_file is not None:
                     most_common_df = helper.most_common_words_2(selected_user, df,0)
                     
                     # heading
-                    st.markdown("<h3 style='text-align: center; color: black;'>Neutral Words</h3>",unsafe_allow_html=True)
+                    st.markdown("<h3 style='text-align: center; color: White;'>Neutral Words</h3>",unsafe_allow_html=True)
                     fig, ax = plt.subplots()
                     ax.barh(most_common_df[0], most_common_df[1],color='grey')
                     plt.xticks(rotation='vertical')
@@ -570,7 +570,7 @@ if uploaded_file is not None:
                     most_common_df = helper.most_common_words_2(selected_user, df,-1)
                     
                     # heading
-                    st.markdown("<h3 style='text-align: center; color: black;'>Negative Words</h3>",unsafe_allow_html=True)
+                    st.markdown("<h3 style='text-align: center; color: White;'>Negative Words</h3>",unsafe_allow_html=True)
                     fig, ax = plt.subplots()
                     ax.barh(most_common_df[0], most_common_df[1], color='red')
                     plt.xticks(rotation='vertical')
