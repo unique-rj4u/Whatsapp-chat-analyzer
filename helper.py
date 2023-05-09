@@ -156,9 +156,9 @@ def activity_heatmap(selected_user,df):
 
 #-----------------------------------------------------------------<< Sentiment Analysis >>---------------------------------------------------------------#
 
-# -1 => Negative
 # 0 => Neutral
 # 1 => Positive
+# -1 => Negative
 
 # Will return count of messages of selected user per day having k(0/1/-1) sentiment
 def week_activity_map_2(selected_user,df,k):
